@@ -16,8 +16,8 @@ const cancelDeleteButton2 = document.getElementById("cancelDelete2");
 let editTodo = null;
 let deleteLi = null;
 let deleteTodoText = "";
-//These variables are used to store the current editing todo,
-//the list item to be deleted, and the text of the todo to be deleted.
+//These variables are used to store the current editing todo, the list item
+//to be deleted, and the text of the todo to be deleted.
 
 const addTodo = () => {
   const inputText = inputBox.value.trim();
