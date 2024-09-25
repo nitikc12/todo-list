@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(232, 238, 238);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#errorMessage {
+  color: red;
+  display: none;
+  margin-top: 5px;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin-block: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.input-container input[type="text"] {
+  width: 70%;
+}
+
+.input-container input[type="button"] {
+  background-color: lavender;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+.input-container input[type="button"]:hover {
+  background-color: blue;
+}
+
+ul {
+  width: 100%;
+  max-width: 450px;
+  /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  border: 0.125px solid #a19f9f;
+  border-radius: 8px;
+  margin-block-end: 12px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(check.png);
+}
+ul li p {
+  flex-grow: 1;
+  padding: 2px;
+}
+ul li :hover {
+  background-color: #a19f9f;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: none;
+  cursor: ponter;
+}
+
+.deleteBtn {
+  color: red;
+}
+.editBtn {
+  color: green;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.overlayer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #415a72;
+  opacity: 0.9;
+  z-index: -5;
+}
+.buttonOf {
+  gap: 8px;
+}
+#confirmDelete {
+  background-color: Green;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 30px;
+}
+#cancelDelete {
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 30px;
+}
+.buttonOf {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.confirm-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  height: 180px;
+}
+
+#closeButton {
+  color: black;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #4caf50;
+}
+li .todo-checkbox {
+  margin-right: 10;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-container {
+  align-items: center;
+}
+
+.buttonOf {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.confirm-content2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  height: 180px;
+}
+
+#closeButton2 {
+  color: black;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+.todo-checkbox2 {
+  width: 20px;
+  height: 20px;
+  accent-color: #4caf50;
+}
+li .todo-checkbox2 {
+  margin-right: 10;
+}
+
+.close-button2:hover,
+.close-button2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-container2 {
+  align-items: center;
+}
+
+.buttonOf2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.popup2 {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.overlayer2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #415a72;
+  opacity: 0.9;
+  z-index: -5;
+}
+
+#deleteAll {
+  background-color: #4caf50;
+  color: black;
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.deleteAll:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

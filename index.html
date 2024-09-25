@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <h1>My To Do List</h1>
+        <input type="text" placeholder="Add a new to do...." id="box" />
+        <input type="button" value="Add" id="addBtn" />
+        <input type="checkbox" id="SelectAll" />
+        <label for="SelectAll" style="display: flex; align-items: center">
+          Select All
+        </label>
+        <!-- <input type="button" value="Select All" id="SelectAll" /> -->
+        <p id="errorMessage" style="color: red; display: none"></p>
+      </div>
+      <ul id="todoList">
+        <!-- <label for="myCheck">Checkbox:</label>
+        <input type="checkbox" id="myCheck" onclick="myFunction()" /> -->
+
+        <!-- <li>Task1</li>
+        <li>Task2</li>
+        <li>Task3</li> -->
+      </ul>
+
+      <div id="confirm" class="popup">
+        <div class="overlayer">
+          <div class="confirm-content">
+            <div class="close-button" id="closeButton">
+              &times;
+              <p>Are you sure you want to delete this todo?</p>
+              <div class="buttonOf">
+                <button id="confirmDelete">Yes</button>
+                <button id="cancelDelete">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="confirm2" class="popup2">
+        <div class="overlayer2">
+          <div class="confirm-content2">
+            <div class="close-button2" id="closeButton2">
+              &times;
+              <p>Are you sure you want to delete this all todo?</p>
+              <div class="buttonOf2"></div>
+              <button id="confirmDelete2">Yes</button>
+              <button id="cancelDelete2">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
